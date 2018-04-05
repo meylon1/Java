@@ -1,0 +1,36 @@
+import java.awt.*;
+
+import javax.swing.*;
+
+public class ggs  {
+
+	public static void main(String[] args) {
+		DrawingPanel Panel = new DrawingPanel();
+		Graphics g = Panel.getGraphics();
+
+		
+	    JFrame frame = new JFrame("Micky Mouse");
+	    frame.setSize(400,300);
+	    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	    frame.setBackground(Color.black);
+	 
+	    // add panel to main frame
+	    frame.add(Panel);
+	 
+	    frame.setVisible(true);
+	    
+	 
+	  }
+	}
+	 
+	// create a panel that you can draw on.
+	class DrawingPanel extends JPanel {
+	  public void paint(Graphics g) {
+	    g.setColor(Color.red);
+	    g.fillRect(100,75,100,100);
+	    g.drawOval(60, 30, 60, 60);
+	    g.drawOval(170, 30, 60, 60);
+	    g.setColor(Color.black);
+	    g.drawLine(100,150,200,150);
+	  }
+	}

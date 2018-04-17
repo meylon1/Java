@@ -38,6 +38,7 @@ public static void main(String[] args) {
 				newList.add(numbers);
 
 			}else {
+					//System.out.println();
 
 			}
 
@@ -47,5 +48,4 @@ public static void main(String[] args) {
 		 list.addAll(0, newList);
 
 	}
-
 }

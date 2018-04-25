@@ -2,14 +2,15 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
-import java.util.TreeMap;
+import java.util.HashMap;
+
 
 public class UniqeAssignment3 {
 
 
-	public static void main(String[] a) {
+	public static void main(String[] args) {
 		//create a map
-		Map<String , String> Unique = new TreeMap <String , String>();
+		Map<String , String> Unique = new HashMap <String , String>();
 		// add key vale Pairs to the map
 
 		Unique.put("Marty" , "Stepp");
@@ -20,7 +21,7 @@ public class UniqeAssignment3 {
 		//print the map
 		System.out.println(isUnique);
 
-		Map<String , String> TestUnique= new TreeMap <String , String>();
+		Map<String , String> TestUnique= new HashMap <String , String>();
 		TestUnique.put("Kendrick" , "Perkins");
 		TestUnique.put("Stuart" , "Reges");
 		TestUnique.put("Jessica" , "Miller");

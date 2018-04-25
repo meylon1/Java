@@ -18,50 +18,30 @@ public class UniqeAssignment3 {
 		Unique.put("Amanda" , "Camp");
 		Unique.put("Hal" , "Perkins");
 		//print the map
-		//System.out.println(isUnique);
+		System.out.println(isUnique);
 
 		Map<String , String> TestUnique= new TreeMap <String , String>();
 		TestUnique.put("Kendrick" , "Perkins");
 		TestUnique.put("Stuart" , "Reges");
 		TestUnique.put("Jessica" , "Miller");
 		TestUnique.put("Bruce" , "Reges");
-		TestUnique.put("Hal" , "Perkins");}
-
-	/*Collection<String> secondValues = isUnique.values();
-		for (String second: secondValues) {
-			//System.out.println("second :   " + second);
-		}*/
-
-	private static boolean isUnique(Map<String, String> Unique, Map<String, String> TestUnique) {
-
-		Collection<String> TestValues = TestUnique.values();
-		Collection<String> secondValues = Unique.values();
-
-		Set<String> Val = new HashSet<String>();
-		Set<String> Vale = new HashSet<String>();
-
-
-		for (String tes: TestValues) {
-			for (String valu : secondValues) {
-				Val.add(tes);
-				Vale.add(valu);
-				Val.contains(tes);
-				Vale.contains(valu);
-				if (Val.size() != Vale.size() && Val.contains(valu)== Vale.contains(valu)){
-					System.out.println("true");
-
-				}
-				else {
-					System.out.println("");
-
-				}
-
-
-
-			}
-		}
-		return false;
+		TestUnique.put("Hal" , "Perkins");
+		System.out.println(TestUnique);
 	}
-}
+
+	static boolean isUnique(Map<String, String> TestU) {
+
+		Collection<String> values = TestU.values();
+		Set<String> Val = new HashSet<String>();
+	
+
+		for(String tes: values) {	
+				Val.add(tes);
+	
+			 }
+		return Val.size()== values.size();
+		}
+	}
+
 
 

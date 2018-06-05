@@ -1,4 +1,3 @@
-
 package inclassProject;
 
 public class replacemain {
